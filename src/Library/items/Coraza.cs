@@ -1,9 +1,9 @@
 namespace RoleplayGame.Items
 {
     /// <summary>
-    /// Túnica. Permite defenderse levemente.
+    /// Shell. Permite defenderse mucho
     /// </summary>
-    public class Robes : IDefenseItem
+    public class Coraza : IDefenseItem
     {
         /// <summary>
         /// El poder de defensa.
@@ -13,13 +13,13 @@ namespace RoleplayGame.Items
         {
             get
             {
-                return 2;
+                return 50;
             }
         }
 
         public override string ToString()
         {
-            return "Robes";
+            return "Coraza";
         }
     }
 }
