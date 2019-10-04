@@ -6,6 +6,7 @@ namespace RoleplayGame.Characters
     /// <summary>
     /// Personaje Enano
     /// </summary>
+    
     public class Dwarve : Character
     {
         public Dwarve(string name)
