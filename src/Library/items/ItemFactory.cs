@@ -11,6 +11,8 @@ namespace RoleplayGame.Items
         Sling = 4,
         Coraza = 5,
         Sword = 6,
+
+        Guante = 7,
     }
 
     /// <summary>
@@ -31,7 +33,8 @@ namespace RoleplayGame.Items
                 case ItemType.Robes: return new Robes();
                 case ItemType.Coraza: return new Coraza();
                 case ItemType.Sword: return new Sword();
-                case ItemType.FlipFlops: return new FlipFlops();¿
+                case ItemType.Guante: return new Guante(); 
+                case ItemType.FlipFlops: return new FlipFlops();
 
                 default: return null;
             }
