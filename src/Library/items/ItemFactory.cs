@@ -7,6 +7,7 @@ namespace RoleplayGame.Items
     {
         Magic = 1,
         Robes = 2,
+        FlipFlops = 3,
         Sling = 4,
         Sword = 6,
     }
@@ -27,6 +28,7 @@ namespace RoleplayGame.Items
             {
                 case ItemType.Magic: return new Magic();
                 case ItemType.Robes: return new Robes();
+                case ItemType.FlipFlops: return new FlipFlops();
                 case ItemType.Sword: return new Sword():
                 
 
