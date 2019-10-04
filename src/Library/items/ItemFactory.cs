@@ -7,9 +7,7 @@ namespace RoleplayGame.Items
     {
         Magic = 1,
         Robes = 2,
-
-
-
+        Sling = 4,
         Sword = 6,
     }
 
