@@ -8,6 +8,7 @@ namespace RoleplayGame.Items
         Magic = 1,
         Robes = 2,
 
+
         Coraza = 5,
     }
 
