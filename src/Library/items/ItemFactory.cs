@@ -31,8 +31,7 @@ namespace RoleplayGame.Items
                 case ItemType.Robes: return new Robes();
                 case ItemType.Coraza: return new Coraza();
                 case ItemType.Sword: return new Sword();
-                case ItemType.FlipFlops: return new FlipFlops();
-                case ItemType.Sword: return new Sword():
+                case ItemType.FlipFlops: return new FlipFlops();¿
 
                 default: return null;
             }
