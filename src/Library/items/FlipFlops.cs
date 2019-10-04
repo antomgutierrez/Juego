@@ -1,25 +1,25 @@
 namespace RoleplayGame.Items
 {
     /// <summary>
-    /// Túnica. Permite defenderse levemente.
+    /// FlipFlops. Permite atacar hardcore style.
     /// </summary>
-    public class Robes : IDefenseItem
+    public class FlipFlops : IAttackItem
     {
         /// <summary>
-        /// El poder de defensa.
+        /// El poder de ataque.
         /// </summary>
         /// <value></value>
-        public int DefensePower
+        public int AttackPower
         {
             get
             {
-                return 2;
+                return 100;
             }
         }
 
         public override string ToString()
         {
-            return "Robes";
+            return "Flip Flops";
         }
     }
 }
