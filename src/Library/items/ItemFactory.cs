@@ -27,7 +27,7 @@ namespace RoleplayGame.Items
             {
                 case ItemType.Magic: return new Magic();
                 case ItemType.Robes: return new Robes();
-                case ItemType.Sword: return new Sword():
+                case ItemType.Sword: return new Sword();
                 
 
                 default: return null;
