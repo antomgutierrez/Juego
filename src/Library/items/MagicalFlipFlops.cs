@@ -34,7 +34,7 @@ namespace RoleplayGame.Items
 
         public override string ToString()
         {
-            return "Magic";
+            return "Magical Flip Flops";
         }
     }
 }
