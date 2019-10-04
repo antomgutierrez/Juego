@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 namespace RoleplayGame.Items
 {
     /// <summary>
@@ -14,10 +15,8 @@ namespace RoleplayGame.Items
         /// ataque: se inicia en 0
         /// </summary>
         public int ataque = 0;
-        /// <summary>
-        /// gemas se inician en cero
-        /// </summary>
-        public int gemas = 0;
+        public List<Gema> Lista_Gemas;
+
         public int AttackPower
         {
             get
@@ -26,24 +25,30 @@ namespace RoleplayGame.Items
             }
         }
 
-        public void Agregar_Gema(int gema)
+        public Guante()
+        {       
+        }
+        
+        public void Add_Gemas(int gema)
         {
             if (gema < 0)
             {
-                Console.WriteLine("Ingrese un numero positivo de gemas");
+                Console.WriteLine("Ingrese una cantidad positiva.");
             }
-
-            if (gemas + gema < 5)
+            if (gema + Lista_Gemas.Count <= 5)
             {
+                for (int i = 0; i < gema; i++)
+                {           
+                    Gema nueva_gema = new Gema();
+                    Lista_Gemas.Add(nueva_gema);
+                }
                 ataque = ataque + 20 * gema;
-                gemas = gemas + gema;
-                
             }
             else
             {
-                Console.WriteLine("Excede número de gemas posibles");
+                Console.WriteLine("Excede el numero de gemas posibles");
             }
-
+            
         }
 
         public override string ToString()
