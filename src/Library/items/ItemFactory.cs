@@ -12,10 +12,11 @@ namespace RoleplayGame.Items
         Coraza = 5,
         Sword = 6,
         Guante = 7,
+        MagicalFlipFlops = 8,
     }
 
     /// <summary>
-    /// Creador de elementos. 
+    /// Creador de elementos.
     /// </summary>
     public class ItemFactory
     {
@@ -33,8 +34,9 @@ namespace RoleplayGame.Items
                 case ItemType.Sling : return new Sling();
                 case ItemType.Sword: return new Sword();
                 case ItemType.Coraza: return new Coraza();
-                case ItemType.Guante: return new Guante(); 
+                case ItemType.Guante: return new Guante();
                 case ItemType.FlipFlops: return new FlipFlops();
+                case ItemType.MagicalFlipFlops: return new MagicalFlipFlops();
 
                 default: return null;
             }
